@@ -9,6 +9,10 @@ public class Greeting {
         int year = 2020;
         idea = idea + " " + addString + " " + year;
         System.out.println(idea);
+        /* настройку плагина CheckStyle выполнин
+           проект на ошибки проверил
+           пункт Scan with CheckStyle отметил
+         */
 
     }
 }
