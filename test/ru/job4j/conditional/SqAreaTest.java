@@ -24,46 +24,46 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP129K111Then36Comma813436702806115() {
+    public void whenP129K111Then36Comma81() {
         int p = 129;
         int k = 111;
-        double expected = 36.813436702806115;
+        double expected = 36.81;
         double out = SqArea.square(p, k);
         assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void whenP128K12Then290Comma84023668639054() {
+    public void whenP128K12Then290Comma84() {
         int p = 128;
         int k = 12;
-        double expected = 290.84023668639054;
+        double expected = 290.84;
         double out = SqArea.square(p, k);
         assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void whenP128K5Then568Comma8888888888888() {
+    public void whenP128K5Then568Comma88() {
         int p = 128;
         int k = 5;
-        double expected = 568.8888888888888;
+        double expected = 568.88;
         double out = SqArea.square(p, k);
         assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void whenP8K15Then0Comma9375() {
+    public void whenP8K15Then0Comma93() {
         int p = 8;
         int k = 15;
-        double expected = 0.9375;
+        double expected = 0.93;
         double out = SqArea.square(p, k);
         assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void whenP8K155Then0Comma10190664036817881() {
+    public void whenP8K155Then0Comma10() {
         int p = 8;
         int k = 155;
-        double expected = 0.10190664036817881;
+        double expected = 0.10;
         double out = SqArea.square(p, k);
         assertEquals(expected, out, 0.01);
     }
