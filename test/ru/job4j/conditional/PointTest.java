@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class PointTest {
 
     @Test
-    public void when01to02then1() {
+    public void when01to02Then1() {
         int x1 = 0;
         int y1 = 1;
         int x2 = 0;
@@ -17,7 +17,7 @@ public class PointTest {
     }
 
     @Test
-    public void when00to00then0() {
+    public void when00to00Then0() {
         int x1 = 0;
         int y1 = 0;
         int x2 = 0;
@@ -28,7 +28,7 @@ public class PointTest {
     }
 
     @Test
-    public void when44toMinus3Minus4then10Comma63() {
+    public void when44toMinus3Minus4Then10Comma63() {
         int x1 = 4;
         int y1 = 4;
         int x2 = -3;
@@ -50,7 +50,7 @@ public class PointTest {
     }
 
     @Test
-    public void whenMinus2Minus3toMinus4Minus1then2Comma82() {
+    public void whenMinus2Minus3toMinus4Minus1Then2Comma82() {
         int x1 = -2;
         int y1 = -3;
         int x2 = -4;
