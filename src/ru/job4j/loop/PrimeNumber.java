@@ -10,14 +10,4 @@ public class PrimeNumber {
         }
         return count;
     }
-
-    public static void main(String[] args) {
-        System.out.println(PrimeNumber.calc(11));
-        System.out.println(PrimeNumber.calc(5));
-        System.out.println(PrimeNumber.calc(3));
-        System.out.println(PrimeNumber.calc(79));
-        System.out.println(PrimeNumber.calc(1));
-        System.out.println(PrimeNumber.calc(0));
-
-    }
 }
