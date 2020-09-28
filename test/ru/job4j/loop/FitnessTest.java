@@ -25,4 +25,11 @@ public class FitnessTest {
         int expected = 0;
         assertEquals(expected, month);
     }
+
+    @Test
+    public void whenIvan90Nik90Then1Month() {
+        int month = Fitness.calc(90, 90);
+        int expected = 1;
+        assertEquals(expected, month);
+    }
 }
