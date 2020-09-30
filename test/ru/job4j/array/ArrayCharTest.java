@@ -8,8 +8,8 @@ public class ArrayCharTest {
 
     @Test
     public void whenArraysNotSimilarThenFalse() {
-        char[] word = {'W', 'o', 'r', 'd'};
-        char[] pref = {'P', 'r', 'e', 'f'};
+        char[] word = {'H', 'e', 'l', 'l', 'o'};
+        char[] pref = {'H', 'i'};
         boolean result = ArrayChar.startsWith(word, pref);
         boolean expect = false;
         assertEquals(expect, result);
@@ -17,8 +17,8 @@ public class ArrayCharTest {
 
     @Test
     public void whenArraysSimilarThenTrue() {
-        char[] word = {'W', 'o', 'r', 'd'};
-        char[] pref = {'W', 'o', 'r', 'd'};
+        char[] word = {'H', 'e', 'l', 'l', 'o'};
+        char[] pref = {'H', 'e'};
         boolean result = ArrayChar.startsWith(word, pref);
         boolean expect = true;
         assertEquals(expect, result);
