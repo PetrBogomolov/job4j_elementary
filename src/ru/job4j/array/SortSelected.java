@@ -21,8 +21,4 @@ public class SortSelected {
         }
         return data;
     }
-
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(SortSelected.sort(new int[] {5, 3, 7, 9, 1, 6, 3, 2})));
-    }
 }
