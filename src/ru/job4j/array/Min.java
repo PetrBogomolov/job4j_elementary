@@ -10,4 +10,14 @@ public class Min {
         }
         return  min;
     }
+
+    public static int findMinOfRange(int[] array, int start, int finish) {
+        int min = array[0];
+        for (int index = start; index <= finish; index++) {
+            if (min > array[index]) {
+                min = array[index];
+            }
+        }
+        return min;
+    }
 }
