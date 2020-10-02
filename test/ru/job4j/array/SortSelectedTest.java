@@ -6,9 +6,9 @@ import static org.junit.Assert.*;
 public class SortSelectedTest {
 
     @Test
-    public void whenArray963ThenArray369() {
-        int[] result = SortSelected.sort(new int[] {9, 6, 3});
-        int[] expect = {3, 6, 9};
+    public void whenArray9113ThenArray3911() {
+        int[] result = SortSelected.sort(new int[] {9, 11, 3});
+        int[] expect = {3, 9, 11};
         assertArrayEquals(expect, result);
     }
 
@@ -20,9 +20,9 @@ public class SortSelectedTest {
     }
 
     @Test
-    public void whenArray7518ThenArray1578() {
-        int[] result = SortSelected.sort(new int[] {7, 5, 1, 8});
-        int[] expect = {1, 5, 7, 8};
+    public void whenArray7516ThenArray1567() {
+        int[] result = SortSelected.sort(new int[] {7, 5, 1, 6});
+        int[] expect = {1, 5, 6, 7};
         assertArrayEquals(expect, result);
     }
 }
