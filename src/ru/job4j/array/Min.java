@@ -12,7 +12,7 @@ public class Min {
     }
 
     public static int findMinOfRange(int[] array, int start, int finish) {
-        int min = array[0];
+        int min = array[start];
         for (int index = start; index <= finish; index++) {
             if (min > array[index]) {
                 min = array[index];
