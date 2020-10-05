@@ -18,14 +18,13 @@ public class AlgoArray {
             System.out.print(index);
         }
         System.out.println();
-        /*
-         может быть такой метод будет рассказан далее, но я решил применить его в этом задании
+        /**
+         * может быть такой метод будет рассказан далее, но я решил применить его в этом задании
          */
         int[] example = {5, 3, 2, 1, 4};
         Arrays.sort(example);
         for (int index : example) {
             System.out.print(index);
         }
-
     }
 }
