@@ -1,62 +1,52 @@
 package ru.job4j.conditional;
 
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PointTest {
+    Point a;
+    Point b;
 
-    @Test
-    public void when01to02Then1() {
-        int x1 = 0;
-        int y1 = 1;
-        int x2 = 0;
-        int y2 = 2;
-        int expected = 1;
-        double out = Point.distance(x1, y1, x2, y2);
-        assertEquals(expected, out, 0.01);
+    @Before
+    public void setup() {
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 0);
     }
 
     @Test
+    public void when01to02Then1() {
+        a = new Point(0, 1);
+        b = new Point(0, 2);
+        double dist = a.distance(b);
+        int expected = 1;
+        assertEquals(expected, dist, 0.01);
+    }
+
+   @Test
     public void when00to00Then0() {
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 0;
-        int y2 = 0;
+        a = new Point(0, 0);
+        b = new Point(0, 0);
+        double dist = a.distance(b);
         int expected = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        assertEquals(expected, out, 0.01);
+        assertEquals(expected, dist, 0.01);
     }
 
     @Test
     public void when44toMinus3Minus4Then10Comma63() {
-        int x1 = 4;
-        int y1 = 4;
-        int x2 = -3;
-        int y2 = -4;
+        a = new Point(4, 4);
+        b = new Point(-3, -4);
+        double dist = a.distance(b);
         double expected = 10.63;
-        double out = Point.distance(x1, y1, x2, y2);
-        assertEquals(expected, out, 0.01);
-    }
-
-    @Test
-    public void whenMinus1And3to3Minus3then7Comma21() {
-        int x1 = -1;
-        int y1 = 3;
-        int x2 = 3;
-        int y2 = -3;
-        double expected = 7.21;
-        double out = Point.distance(x1, y1, x2, y2);
-        assertEquals(expected, out, 0.01);
+        assertEquals(expected, dist, 0.01);
     }
 
     @Test
     public void whenMinus2Minus3toMinus4Minus1Then2Comma82() {
-        int x1 = -2;
-        int y1 = -3;
-        int x2 = -4;
-        int y2 = -1;
+        a = new Point(-2, -3);
+        b = new Point(-4, -1);
+        double dist = a.distance(b);
         double expected = 2.82;
-        double out = Point.distance(x1, y1, x2, y2);
-        assertEquals(expected, out, 0.01);
+        assertEquals(expected, dist, 0.01);
     }
 }
