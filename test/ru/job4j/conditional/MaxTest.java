@@ -32,4 +32,23 @@ public class MaxTest {
         int result = Max.max(left, right);
         assertEquals(expected, result);
     }
+
+    @Test
+    public void when12more11And10Then12() {
+        int first = 12;
+        int second = 11;
+        int third = 10;
+        int result = Max.max(first, second, third);
+        assertEquals(12, result);
+    }
+
+    @Test
+    public void when13more12And11And10Then13() {
+        int first = 12;
+        int second = 11;
+        int third = 10;
+        int four = 13;
+        int result = Max.max(first, second, third, four);
+        assertEquals(13, result);
+    }
 }
