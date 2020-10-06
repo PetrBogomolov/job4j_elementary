@@ -49,4 +49,13 @@ public class PointTest {
         double expected = 2.82;
         assertEquals(expected, dist, 0.01);
     }
+
+    @Test
+    public void whenMinus2Minus3Minus4to4And1And2Then10Comma39() {
+        a = new Point(-2, -3, -4);
+        b = new Point(4, 3, 2);
+        double dist = a.distance3d(b);
+        double expected = 10.39;
+        assertEquals(expected, dist, 0.01);
+    }
 }
