@@ -3,8 +3,12 @@ package ru.job4j.product;
 public final class LiquidationProduct {
     private Product product;
 
-    public Product liquidationProduct(String name, int price) {
-        return new Product(name, price);
+    public Product getProduct() {
+        return product;
+    }
+
+    public LiquidationProduct(String name, int price) {
+        product = new Product(name, price);
     }
 
     public String label() {
