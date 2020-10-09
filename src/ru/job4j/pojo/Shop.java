@@ -12,6 +12,21 @@ public class Shop {
         return result;
     }
 
+    public static Product[] leftShift(Product[] products, int index) {
+            products[index] = null;
+            int j = index;
+            for (int i = index; i < products.length; i++) {
+                if (products[i] != null) {
+                    Product save = products[j];
+                    products[j] = products[i];
+                    products[i] = save;
+                    j++;
+                }
+
+        }
+        return products;
+    }
+
     public static void main(String[] args) {
         Product[] products = new Product[5];
         products[0] = new Product("Milk", 10);
