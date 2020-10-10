@@ -14,17 +14,11 @@ public class Shop {
 
     public static Product[] leftShift(Product[] products, int index) {
             products[index] = null;
-            int j = index;
-            for (int i = index; i < products.length; i++) {
-                if (products[i] != null) {
-                    Product save = products[j];
-                    products[j] = products[i];
-                    products[i] = save;
-                    j++;
-                }
-
-        }
-        return products;
+            for (int i = index; i < products.length - 1; i++) {
+                products[i] = products[i + 1];
+            }
+            products[products.length - 1] = null;
+            return products;
     }
 
     public static void main(String[] args) {
